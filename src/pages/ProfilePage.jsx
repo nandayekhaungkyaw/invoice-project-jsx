@@ -32,7 +32,7 @@ const onSubmit = () => {
           <button
             onClick={onSubmit}
             type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2  dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             Log out
           </button>
@@ -50,9 +50,9 @@ const onSubmit = () => {
               <button
                 data-modal-target="dialog-edit-image"
                 data-modal-toggle="dialog-edit-image"
-                className="absolute bottom-0 right-0 bg-blue-500 text-white p-1 rounded-full hover:bg-blue-600 transition"
+                className="absolute bottom-0 right-0 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 transition"
               >
-                ✎
+                <Pencil className="size-5 "/>
               </button>
               <Dialogbox children={<EditImage />} name="dialog-edit-image" />
             </div>
@@ -60,17 +60,17 @@ const onSubmit = () => {
             <div className="space-y-4 text-sm">
               <div>
                 <label className="block text-gray-700 font-medium">Name</label>
-                <div className="flex flex-row justify-center items-center">
+                <div className="flex flex-row justify-center border-slate-500 items-center w-full p-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                   <input
                     type="name"
                     value={profile?.name || ""}
                     readOnly
-                    className="w-full  px-3 py-2 border  bg-gray-100"
+                    className=" h-full w-full p-3   focus:outline-none"
                   />
                   <button
                     data-modal-target="dialog-edit-name"
                     data-modal-toggle="dialog-edit-name"
-                    className="h-full  flex flex-row gap-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    className="h-full justify-center items-center  flex flex-row gap-3 text-white bg-blue-500 hover:bg-blue-600 rounded-sm focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="button"
                   >
                     <Pencil className="size-4" /> Edit
@@ -84,7 +84,7 @@ const onSubmit = () => {
                   type="email"
                   value={profile?.email || ""}
                   readOnly
-                  className="w-full mt-1 px-3 py-2 border rounded bg-gray-100"
+                  className="w-full p-3 border rounded-md focus:outline-none "
                 />
               </div>
 
@@ -92,17 +92,17 @@ const onSubmit = () => {
                 <label className="block text-gray-700 font-medium">
                   Password
                 </label>
-                <div className="flex flex-row  justify-center items-center">
+                <div className="flex flex-row justify-center border-slate-500 items-center w-full p-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ">
                   <input
                     type="password"
                     defaultValue="********"
                     readOnly
-                    className="w-full  px-3 py-2 border bg-gray-100"
+                    className="h-full w-full p-3 focus:ring-0  focus:none  focus:outline-none border-none focus:border-none"
                   />
                   <button
                     data-modal-target="authentication-modal"
                     data-modal-toggle="authentication-modal"
-                    className="h-full border-[0.8] flex flex-row gap-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    className="h-full justify-center items-center  flex flex-row gap-3 text-white bg-blue-500 hover:bg-blue-600 rounded-sm focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="button"
                   >
                     <Pencil className="size-4" /> Edit

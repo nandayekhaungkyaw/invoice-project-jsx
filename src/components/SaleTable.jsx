@@ -112,10 +112,10 @@ await  setVoucherProducts({
 const customStyles = {
   control: (provided, state) => ({
     ...provided,
-    borderColor: state.isFocused ? '#3b82f6' : '#d1d5db', // your blue focus or gray border
+    borderColor: state.isFocused ? '#3b82f6' : '#6f7b8d', // your blue focus or gray border
     boxShadow: state.isFocused ? '0 0 0 2px #3b82f6' : 'none',
     borderRadius: '0.375rem',   // rounded-md
-    padding: '8px',         // p-3
+    padding: '6px',         // p-3
     minHeight: 'auto',
   }),
   input: (provided) => ({

@@ -87,7 +87,7 @@ const ProductTable = ({product,pagination,setPagination,setProduct}) => {
               <th scope="col" className="px-6 py-3">
         updated_at
           </th>
-          <th scope="col" className="px-6 py-3 flex flex-row">
+          <th scope="col" className="px-6 py-3 ">
             Action
           </th>
         </tr>
