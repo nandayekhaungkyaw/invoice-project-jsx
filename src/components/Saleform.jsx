@@ -5,8 +5,8 @@ import { useForm } from 'react-hook-form';
 
 import SaleTable from './SaleTable';
 import {  useNavigate } from 'react-router-dom';
-import productStore from './../store/productStore';
-import { voucherCreate } from './../services/sale';
+import productStore from '../store/productStore';
+import { voucherCreate } from '../services/sale';
 
 const SaleForm = () => {
   const navigate=useNavigate();
